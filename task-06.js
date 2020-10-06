@@ -4,7 +4,6 @@ let total = 0;
 
 do {
   input = prompt(`Введите число`);
-  // console.log(input);
 
   const numInput = Number.isNaN(Number(input));
 
