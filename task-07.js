@@ -12,8 +12,12 @@ const addLogin = function (allLogins, login) {
   if (isLoginValid(login)) {
     if (isLoginUnique(allLogins, login)) {
       logins.push(login);
-    } else return "Такой логин уже используется!";
-  } else return "Ошибка! Логин должен быть от 4 до 16 символов";
+    } else {
+      return "Такой логин уже используется!";
+    }
+  } else {
+    return "Ошибка! Логин должен быть от 4 до 16 символов";
+  }
   return "Логин успешно добавлен!";
 };
 // console.log(isLoginValid("Pold"));
