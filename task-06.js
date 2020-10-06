@@ -14,7 +14,6 @@ do {
   numbers.push(+input);
 } while (input !== null);
 {
-  numbers.pop();
 }
 if (numbers.length > 0) {
   for (const number of numbers) {
@@ -24,5 +23,4 @@ if (numbers.length > 0) {
   console.log(`Массив пуст`);
 }
 
-console.log(numbers);
 console.log(`Общая сумма чисел равна ${total}`);
